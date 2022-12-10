@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap');
+:root{
+    --Dark-Color: #333333;
+    --Grey: #4F4F4F;
+    --Light-grey: #BDBDBD;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+html{    
+    font-size: 12px;
+}
+body{
+    min-height: 100vh;    
+}
+header{
+    padding: 1.5rem;
+    font-family: 'Inconsolata',sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: -0.08em;
+    text-transform: uppercase;
+}
+.container{
+    display: flex;    
+    padding: 2.5rem;
+    justify-content: center;
+}
+.container img{
+    width: 100%;
+    flex-basis: 40%;    
+}
+.container .error-message{    
+    margin-left: 10rem;
+    font-family: 'Space Mono',sans-serif;
+}
+.error-message h1{    
+    font-size: 4.75rem;
+    color: var(--Dark-Color);
+    max-width: 60rem;
+}
+.error-message p{
+    font-size: 1.75rem;
+    line-height: 1.5;
+    max-width: 30rem;
+    letter-spacing: -0.05rem;
+    word-spacing: -0.05rem;
+    margin: 5rem 0;
+    color: var(--Grey);   
+}
+.error-message button{
+    background-color: var(--Dark-Color);
+    color: white;    
+    padding: 1.5rem;
+    text-transform: uppercase;    
+}
+.error-message button:hover{
+    cursor: pointer;
+    color: var(--Dark-Color);
+    background: white;
+}
+footer{    
+    text-align: center;
+    color: var(--Light-grey);
+    font-family: 'Montserrat';        
+    font-size: 1.25rem;    
+    text-transform: capitalize;
+    word-spacing: 0.5rem;    
+    margin-top: 4vw;
+}
+footer a{
+    color: var(--Grey);
+    text-decoration: none;
+    letter-spacing: 0.25rem;
+}
+
+@media screen and (max-width: 900px){
+    header{
+        font-size: 1rem;
+        letter-spacing: 0;        
+    }
+    .container{
+        flex-direction: column;
+        gap: 5rem;
+    }
+    .container .error-message{
+        margin: 0;
+    }
+    .error-message h1{
+        font-size: 3.5rem;
+    }
+    .error-message p{
+        font-size: 1.45rem;
+    }
+    footer{
+        font-size: 0.85rem;
+        margin: 20vw 2rem 1rem;
+    }
+}
